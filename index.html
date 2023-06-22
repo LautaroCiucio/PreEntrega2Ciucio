@@ -153,21 +153,33 @@
         </Section>
         <!-- ===FIN SERVICIOS INDEX=== -->
 
-        <Section class="unidades_index">
-            <img class="img_unidades_index" src="./img/1036 costado.JPG"
+        <Section class="unidades_index container">
+
+            <article class="row">
+
+            <img class="w-100 col" src="./img/1036 costado.JPG"
                 alt="1 micro de costado estacionado con fondo de montañas">
-            <div class="textos-unidades-index">
-                <h2 class="h2_titulos">Nuestras Unidades</h2>
-                <button class="btn_unidades_index"><a href="./pages/Unidades.html">Ver todas las unidades</a></button>
+
+            <div class="textos-unidades-index text-center">
+
+                <h2 class="h2__titulos display-3 fw-bold">Nuestras Unidades</h2>
+
+                <a class="btn btn-naranja" href="./pages/Unidades.html">Ver todas las unidades</a>
+
             </div>
+
+        </article>
         </Section>
 
-        <div class="titulo_contacto_index">
-            <h2 class="h2_titulos">Contactanos</h2>
-        </div>
+        <Section class="contactanos_index container">
 
-        <Section class="contactanos_index">
-            <div class="formulario_index">
+            <article class="row mt-5">
+
+        <div class="textos_contacto_index col-lg-6">
+            <h2 class="h2__titulos display-3 fw-bold mt-4">Contactanos</h2>
+        
+
+            <div class="formulario_index col-lg-6">
                 <form action=""></form>
                 <div>
                     <input type="text" placeholder="Nombre/Empresa" name="" id="">
@@ -179,16 +191,19 @@
                     <textarea placeholder="Escribe tu mensaje" name="" id="" cols="30" rows="10"></textarea>
                 </div>
                 <div>
-                    <button>Enviar</button>
+                    <button class="btn btn-naranja">Enviar</button>
                 </div>
             </div>
+        </div>
 
-            <div class="mapa_index">
+            <div class="iframe-mapa mt-4 col-lg-6">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.8292371377142!2d-58.20608038476474!3d-34.810237780406446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a329bc80e5beb3%3A0x16860869f3b20266!2sCiucio%20Hermanos%20SRL!5e0!3m2!1ses-419!2sar!4v1685314661603!5m2!1ses-419!2sar"
+                    class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.8292371377142!2d-58.20608038476474!3d-34.810237780406446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a329bc80e5beb3%3A0x16860869f3b20266!2sCiucio%20Hermanos%20SRL!5e0!3m2!1ses-419!2sar!4v1685314661603!5m2!1ses-419!2sar"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+
+        </article>
         </Section>
 
     </main>
