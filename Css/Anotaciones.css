@@ -1,0 +1,143 @@
+/* ---Reseteo de CSS--- */
+/* --Se utiliza para sacar los valores por defecto que traen los navegadores --*/
+/* Utilizarlo siempre al principio del codigo del CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.imagen-logo {
+    max-width: 100%;
+}
+
+/*---Normalize.CSS---*/
+/* ---Para que todas las propiedades del sitio se normalicen los comportamientos de nuestro sitio web independientemente del navegador que se utilice */
+
+.barra-nav {
+    width: 1200px;
+    color: white;
+    height: 75px;
+    background-color: black;
+
+    /* --- overflow --- */
+    /* overflow: visible, hidden, scroll, auto*/
+
+    /* ---border--- */
+    /* border-style: solid;
+border-color: red;
+border-width: 20px; */
+    /* ---el border se puede */
+    border: red 20px solid;
+
+    /* modificar los distintos lados del border
+border-top
+border-right
+border-left
+border-bottom*/
+
+    /* ---PADDING--- */
+    /* padding: 40px 40px 40px 40px; */
+
+    /* ---MARGIN--- */
+    /* margin-top: 50px;
+margin-left: 500px;
+margin-right: 100px;
+margin-bottom: 100px;
+
+tambien se puede usar asi:
+
+margin: 50px 50px 50px 50px;*/
+
+    /* como centrar un elemento */
+
+    margin-left: auto;
+    margin-right: auto;
+
+    /* ---display--- */
+    /* display: inline;
+display: block;
+display: inline-block;*/
+}
+
+.barra-nav {
+    display: inline block;
+}
+
+/* Modificar el tamaño de los textos */
+/* font-size: 16px; */
+/* El EM: relativo al font-size del elemento padre
+El REM: es relativo al font-size del elemento raiz (HTML: valor base 16px), esta es la que utilizaremos en el curso*/
+/* Utilizaremos el REM para el tamaño de los textos */
+
+/* CLASE FLEXBOX */
+
+/* display: flex; 
+Direccion de los elementos (flex-direction:)
+row - fila
+column - columna
+row-reverse
+column-reverse */
+
+/* flex-wrap (multilinea o unica linea)
+nowrap (por defecto, unica linea)
+wrap - multilinea
+wrap-reverse */
+
+/* flex-flow (podemos declarar los valores de flex-direction y flex-wrap en una sola
+ejemplo
+flex-flow: column wrap-reverse*/
+
+/* Justify content: distribucion sobre el eje principal segun la propiedad "flex-direction"
+si utilizamos flex-direction: column, ubicara los elementos sobre el eje vertical
+si utilizamos flex-direction: row, ubicara los elementos sobre el eje horizontal
+
+ejemplo
+
+- Justify-content: center
+- Justify-content: space-between;
+- Justify-content: space-evenly;
+- Justify-content: space-around;*/
+
+/* Align-items
+align-self
+align-content */
+
+/* GAP (aplica separacion a los elementos)
+ejemplo en una lista de navegacion
+
+.nav-lista{
+    display:flex;
+    gap: 1rem; */
+
+
+/* ===CLASE GRIDS  29-5===*/
+
+/* Activar la grilla */
+.contenedor {
+    display: grid;
+
+    /* Activar filas y columnas */
+    grid-template-columns: 200px 300px 100px;
+    grid-template-rows: 200px 300px 100px;
+    /* forma abreviada */
+    grid-template-columns: repeat(10, 100px); 
+    /* tambien se pueden combinar */
+    grid-template-columns: 300px repeat(10,100px);
+    /* Fracciones */
+    grid-template-columns: 2fr 1fr;
+}
+
+/* COMO COLOCAR UN ELEMENTO EN LA GRILLA */
+.caja-posicionada{
+    grid-column: span 2;
+    grid-row: 3/span 2;
+
+    
+
+}
