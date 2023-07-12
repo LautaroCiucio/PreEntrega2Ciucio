@@ -3,9 +3,19 @@ $color_blanco: rgb(255, 255, 255);
 $color_negro: rgb(0, 0, 0);
 $color_btn:rgb(251, 87, 5);
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background-color:white;
+    font-family: 'Roboto', sans-serif
+
+}
